@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+	FUNCTIONS
+		</title>
+	</head>
+<body>
+  <p>checking event</p>
+ 
+  <script>
+		//funstore();
+
+		/*
+		const funstore=function(){
+			console.log('anonymous function');
+		}
+		funstore();
+
+		const obj1={
+			a:34,
+			funprop:function(){
+				console.log('passing func as a val in obj');
+			}
+		};
+
+		obj1.funprop();
+
+//callbackfunctions
+		function show(param){
+     param();
+		}
+		const callbackfun=function(){
+			console.log("callbackff");
+		}
+		show(callbackfun); */
+
+
+		//settimeout
+
+		/*setTimeout(function(){
+			console.log('timeout');
+		}, 3000);*/
+
+	//	console.log("outer");
+
+//setintervsl
+		/*
+		setInterval(function(){
+			console.log('repeated');
+		},4000);*/
+
+		//console.log('outerset');
+
+		//foreachloop
+
+		const a =[2,'kohli','littu'];
+		a.forEach(function(x){
+        console.log(x+2);
+		});
+
+		//arrowfunctions
+
+		const arrFun=()=> {
+			console.log("arrow");
+		}
+     
+  arrFun();
+
+	const arrFunSingleParam= x =>{
+		console.log(2+x);
+	}
+
+	arrFunSingleParam(5);
+
+
+	const arrFunc3=()=>3;
+	console.log(arrFunc3());
+
+
+	//addeventlistener
+	document.body.addEventListener('keydown',(event)=>{
+		if(event.key==='l'){
+			console.log('you pressed l');
+		}
+		//console.log(event.key);
+	});
+
+
+	//FILTER
+	const array1=[2,3,4];
+	const array2=array1.filter((val)=>{
+    if(val%2===0){
+			return true;
+		}
+	});
+
+	console.log(array2);
+
+
+	//MAP
+	//let maparray=[2,3,4];
+	console.log([2,3,4].map((vale,index)=>{
+		return vale*2;
+
+	}));
+	</script>
+</body>
+
+</html>
